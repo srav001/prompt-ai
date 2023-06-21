@@ -1,20 +1,14 @@
-# Nuxt 3 Minimal Starter
+# prompt-ai
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Uses Nuxt 3 + Typescript + Tailwind + OpenAI API
 
 ## Setup
 
 Make sure to install the dependencies:
 
 ```bash
-# npm
-npm install
-
-# pnpm
 pnpm install
 
-# yarn
-yarn install
 ```
 
 ## Development Server
@@ -22,14 +16,7 @@ yarn install
 Start the development server on `http://localhost:3000`:
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
 pnpm run dev
-
-# yarn
-yarn dev
 ```
 
 ## Production
@@ -37,28 +24,18 @@ yarn dev
 Build the application for production:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
 pnpm run build
 
-# yarn
-yarn build
 ```
 
 Locally preview production build:
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
 pnpm run preview
-
-# yarn
-yarn preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-# prompt-ai
+### Screenshots
+
+<img width="1286" alt="Screenshot 2023-06-21 at 3 30 42 AM" src="https://github.com/srav001/prompt-ai/assets/53465522/a3dea57f-f06f-4719-a9be-2221c0f9afed">
+
+<img width="563" alt="Screenshot 2023-06-21 at 3 30 38 AM" src="https://github.com/srav001/prompt-ai/assets/53465522/aa1e1f5e-e9f5-4b0b-a22d-545d7601e08c">

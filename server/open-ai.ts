@@ -1,10 +1,11 @@
 import { Configuration, OpenAIApi } from 'openai';
 
-const configuration = new Configuration({
-	organization: 'org-Ax838ryd5vEngR6Clkvh54Ie',
-	apiKey: process.env.OPENAI_API_KEY
-});
-const openai = new OpenAIApi(configuration);
+const openai = new OpenAIApi(
+	new Configuration({
+		organization: 'org-Ax838ryd5vEngR6Clkvh54Ie',
+		apiKey: process.env.OPENAI_API_KEY
+	})
+);
 
 export async function getEngines() {
 	const response = await openai.listEngines();
@@ -23,10 +24,10 @@ export async function getAnswer() {
 			prompt: 'Hello world'
 		});
 
-		console.log(completion.data.choices[0].text);
+		console.log(completion.data);
 		return completion.data.choices[0].text;
 	} catch (error) {
-		let apiError = error as unknown as any;
+		const apiError = error as unknown as any;
 		if (apiError.response) {
 			console.log(apiError.response.status);
 			console.log(apiError.response.data);
