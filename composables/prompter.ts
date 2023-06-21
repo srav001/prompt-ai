@@ -1,5 +1,5 @@
 async function getModels() {
-	return await useFetch('/api/model');
+	return await $fetch('/api/models');
 }
 
 async function getAnswer() {
