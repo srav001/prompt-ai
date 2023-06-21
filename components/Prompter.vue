@@ -1,4 +1,8 @@
 <script setup lang="ts">
+const { data: models } = await usePrompter().getModels();
+
+const { data: answer } = await usePrompter().getAnswer();
+console.log(answer);
 const input = shallowRef<undefined | string>(undefined);
 </script>
 
